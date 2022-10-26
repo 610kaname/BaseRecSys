@@ -1,10 +1,10 @@
 # BaseRecSys
-「推薦システム実践入門」
-oreilly.co.jp/books/9784873119663/
+[「推薦システム実践入門」](oreilly.co.jp/books/9784873119663/)
 
-src, notebook, utilは、統一モジュール。srcには、base_recommender.pyのクラス設計に沿って、各種アルゴリズムが実装。utilには、データの読み込みや評価の統一モジュールが実装。notebookには、srcで実装したアルゴリズムを利用して、アルゴリズムの動作確認をするコードが記述。
+src, notebook, utilは、統一モジュール。srcには、base_recommender.pyのクラス設計に沿って、各種アルゴリズムが実装。utilは、データの読み込みや評価の統一モジュールが実装。notebookは、srcで実装したアルゴリズムを利用して、アルゴリズムの動作確認をするコードが記述。colabで試せるようにしたつもり。日本語が化ける。
 
 
+データは以下のようにして取得(以下のようなフォルダ構成になるように)
 ```
 $ wget -nc --no-check-certificate https://files.grouplens.org/datasets/movielens/ml-10m.zip -P ./data
 $ unzip -n chapter5/data/ml-10m.zip -d ./data
@@ -24,8 +24,6 @@ BaseRecSys
 │   ├── data_loader.py
 │   ├── metric_calculator.py
 │   └── models.py
-└─── colab
-    ├── Association.ipynb
-    ├── BPR.ipynb
-    └── etc...
+└─── data(wgetする)
+    └── ml-10M100K
 ```
